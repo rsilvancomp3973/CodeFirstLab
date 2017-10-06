@@ -1,0 +1,5 @@
+﻿Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\Locations
+
+add-migration -ConfigurationTypeName LabCodeFirst.Migrations.Locations.Configuration "initial"
+
+update-database -ConfigurationTypeName LabCodeFirst.Migrations.Locations.Configuration
